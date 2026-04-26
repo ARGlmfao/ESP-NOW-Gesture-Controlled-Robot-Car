@@ -10,7 +10,7 @@
 
 ## 🎥 Demo
 
-![Demo](images/demo.gif)
+![Demo](demo.gif)
 
 ## 🧠 How It Works
 
