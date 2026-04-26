@@ -2,6 +2,9 @@
 
 > Control a robot car using just your hand — no WiFi, no internet, just pure ESP-NOW ⚡
 
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Project](https://img.shields.io/badge/Type-Robotics-blue)
+![Latency](https://img.shields.io/badge/Latency-Ultra%20Low-red)
 ---
 ---
 
@@ -39,7 +42,14 @@
 
 ## 🛠️ Tech Stack
 
-`ESP32` `ESP8266` `MicroPython` `ESP-NOW` `MPU6050` `TB6612` `Embedded Systems`
+![ESP32](https://img.shields.io/badge/ESP32-MCU-red)
+![ESP8266](https://img.shields.io/badge/ESP8266-MCU-blue)
+![MicroPython](https://img.shields.io/badge/MicroPython-Code-green)
+![ESP-NOW](https://img.shields.io/badge/ESP--NOW-Protocol-orange)
+![MPU6050](https://img.shields.io/badge/MPU6050-Sensor-yellow)
+![TB6612](https://img.shields.io/badge/TB6612-MotorDriver-lightgrey)
+![Li-ion](https://img.shields.io/badge/Li--ion-Battery-purple)
+![LM2596](https://img.shields.io/badge/LM2596-BuckConverter-brightgreen)
 ---
 
 ## 🧩 Hardware Used
