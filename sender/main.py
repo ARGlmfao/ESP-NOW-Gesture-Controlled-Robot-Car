@@ -3,12 +3,9 @@ import network
 import espnow
 import time
 
-# =========================
-# MPU6050 SETUP
-# =========================
+# MPU6050
 i2c = I2C(0, scl=Pin(22), sda=Pin(21))
 MPU_ADDR = 0x68
-
 i2c.writeto_mem(MPU_ADDR, 0x6B, b'\x00')
 
 def read_raw(addr):
@@ -23,7 +20,7 @@ def get_gesture():
     ax = read_raw(0x3B)
     ay = read_raw(0x3D)
 
-    threshold = 6000
+    threshold = 6500  # better stable value
 
     if ax > threshold:
         return "FORWARD"
@@ -36,26 +33,21 @@ def get_gesture():
     else:
         return "STOP"
 
-# =========================
-# ESPNOW SETUP
-# =========================
+# ESPNOW
 sta = network.WLAN(network.STA_IF)
 sta.active(True)
 
 e = espnow.ESPNow()
 e.active(True)
 
-peer = #mac address of your receiver
+peer = # MAC address of receiver esp. example: b'\x24\x6F\x28\xAB\xCD\xEF'
 e.add_peer(peer)
 
-# =========================
-# MAIN LOOP
-# =========================
 last = None
 
 while True:
     gesture = get_gesture()
-    data = gesture.encode()   # 🔥 FIX
+    data = gesture.encode()
 
     if gesture == "STOP":
         e.send(peer, data)
