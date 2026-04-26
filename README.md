@@ -36,6 +36,17 @@
 - 🔋 Stable power using buck converter
 - 🎯 Clean and efficient code
 
+
+## 🛠️ Tech Stack
+
+| Category | Tech |
+|--------|------|
+| Microcontrollers | ESP32, ESP8266 |
+| Programming | MicroPython |
+| Communication | ESP-NOW |
+| Sensors | MPU6050 |
+| Motor Control | TB6612FNG |
+| Power | Li-ion Battery, LM2596 |
 ---
 
 ## 🧩 Hardware Used
