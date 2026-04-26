@@ -102,7 +102,6 @@
 ## 🧑‍💻 Author
 
 **Miles**  
-Class 9 Robotics Project ⚡
 
 ---
 
