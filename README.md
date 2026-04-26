@@ -8,6 +8,10 @@
 ---
 ---
 
+## 🎥 Demo
+
+![Demo](images/demo.gif)
+
 ## 🧠 How It Works
 
 1. **ESP32 + MPU6050 (Sender)** detects hand tilt  
